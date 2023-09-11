@@ -1,11 +1,10 @@
-## InstaCart 
+## ACM PVGCOET WEBSITE 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d989ba5f-681a-446f-b47f-f196a4a0bb35/deploy-status)](https://app.netlify.com/sites/sayancr777-instacart/deploys)
 
->```Expense Tracker``` is a free minimalist daily planner app focused on privacy. Schedule your tasks and projects with the to do lists and complete your deadline before the day ends. 
-
+ 
 Author : [Siddhesh Kukae](contact@siddheshkukade.com)
 
 ![preview](https://github.com/Sayan-Maity/InstaCart/blob/main/public/preview.jpg)
