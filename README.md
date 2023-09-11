@@ -6,7 +6,7 @@
 
 >```Expense Tracker``` is a free minimalist daily planner app focused on privacy. Schedule your tasks and projects with the to do lists and complete your deadline before the day ends. 
 
-Author : [Sayan Maity](sayancr777@gmail.com)
+Author : [Siddhesh Kukae](contact@siddheshkukade.com)
 
 ![preview](https://github.com/Sayan-Maity/InstaCart/blob/main/public/preview.jpg)
 
