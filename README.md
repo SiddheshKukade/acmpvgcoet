@@ -6,8 +6,9 @@
 
  
 Author : [Siddhesh Kukae](contact@siddheshkukade.com)
+![image](https://github.com/SiddheshKukade/acmpvgcoet/assets/65951872/4b15637a-cdf3-41cc-8e73-e2828189e782)
 
-![preview](https://github.com/Sayan-Maity/InstaCart/blob/main/public/preview.jpg)
+ 
 
 ## Features
 
