@@ -84,7 +84,7 @@ const Features = ({ featureData, title, events }) => {
           }}
           href="/events"
         >
-          See more Events.
+          See more Events
         </a>
       </p>
     </>

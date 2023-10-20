@@ -1,6 +1,6 @@
 .navbarWrapper {
   width: 100%;
-  height: min(10vh, 100px);
+  height: min(15vh, 100px);
   z-index: 10000;
   position: relative;
 }
@@ -23,7 +23,7 @@
 
 .navLinksWrapper {
   display: flex;
-  width: 400px;
+  width: 420px;
 }
 
 .nav {

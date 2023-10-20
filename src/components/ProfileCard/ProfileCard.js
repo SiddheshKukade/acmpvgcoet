@@ -1,10 +1,9 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
-import "../../custom.css";
+import styles from "./ProfileCard.module.css"
+
+
 export function MultiActionAreaCard({
   photoUrl,
   title,
@@ -14,19 +13,19 @@ export function MultiActionAreaCard({
   btnData,
 }) {
   return (
-    <Card sx={{ maxWidth: 345, borderRadius: "1rem" }}>
-      <CardActionArea>
-        <CardMedia component="img" height="340" image={photoUrl} alt={title} />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {desc}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
+    <Card>
+		<div className={styles.card}>
+			<div className={styles.card_img}> 
+				<img src={photoUrl} alt={title}></img>
+			</div>
+			<div className={styles.card_title}>
+				{title}		
+			</div>
+			<div className={styles.card_descr}>
+				{desc}		
+			</div>
+		</div>
+      <CardActions className={styles.card_buttons} >
         {btnData ? (
           btnData.map((btn) => (
             <Button
