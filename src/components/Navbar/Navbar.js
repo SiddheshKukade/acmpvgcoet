@@ -47,13 +47,13 @@ const Navbar = ({ hamActive, setHamActive }) => {
               Our Team
             </a>
           </div>
-          <div>
+          <div className={styles.nav_buttons}>
             <a
               href="https://docs.google.com/forms/d/1vCa3Gzku4dQ4HBN3NOIflM6QPtosuAxOu399rwxd2iQ/"
               target="_blank"
               className={styles.login}
             >
-              Subscribe to Newsletter
+              Subscribe to Us
             </a>
             <a href="why">
               <button className={styles.signup}>Why Join ?</button>

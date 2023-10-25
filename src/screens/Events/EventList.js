@@ -1,8 +1,21 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { urlFor } from "../../client";
 import styles from "./EventList.module.css";
 
 const EventList = ({ featureData, title, events }) => {
+
+	const [activeEvent, setActiveEvent] = useState(null);
+
+	const handleToggle = (eventId) => {
+	  if (eventId === activeEvent) {
+		 // If the same event is clicked again, close it.
+		 setActiveEvent(null);
+	  } else {
+		 // Open the clicked event and close others.
+		 setActiveEvent(eventId);
+	  }
+	};
+
   return (
     <div className={`${styles.featuresWrapper} center`}>
       <div className={styles.featuresHeading}>
@@ -30,6 +43,8 @@ const EventList = ({ featureData, title, events }) => {
           })} */}
 
           {events.map(({ title, _id, date, description, slug, mainImage }) => {
+				const isOpen = _id === activeEvent;
+
             return (
               <div className={`${styles.featureDiv} center`} key={_id}>
                 <Fragment>
@@ -43,16 +58,27 @@ const EventList = ({ featureData, title, events }) => {
                   <div className={styles.feature}>
                     <p>{title}</p>
                   </div>
-                  <div className={styles.featureDescription}>
-                    <p style={{ textAlign: "justify" }}>{description}</p>
+
+                  <div
+                    className={`${styles.featureDescription} ${
+                      isOpen ? styles.active : ''
+                    }`}
+                  >
+						<p style={{ textAlign: 'justify' }}>{description}</p>
                   </div>
+						<button
+                    onClick={() => handleToggle(_id)}
+                    className={styles.feature_button}
+                  >
+                    {isOpen ? 'HIDE' : 'SEE MORE'}
+                  </button>
                 </Fragment>
               </div>
             );
           })}
         </div>
       </div>
-      {/* <button cl`assName={styles.shopBtn}>SEE MORE</button> */}
+      {/* <button className={styles.shopBtn}>SEE MORE</button> */}
     </div>
   );
 };
