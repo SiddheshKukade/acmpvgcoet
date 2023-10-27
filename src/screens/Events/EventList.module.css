@@ -10,7 +10,11 @@
 }
 .imgCont{
   width: 100%;
+	position: relative;
+	height: 350px;
+	border-radius: 15px;
 }
+
 .featuresListWrapper {
   width: 100%;
   overflow: auto;
@@ -24,9 +28,6 @@
 }
 
 .featuresList {
-  /* width: 1100px; */
-  /* height: 465px; */
-  /* margin: 0 10px;   */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -36,10 +37,12 @@
 
 .featureDiv {
   flex-direction: column;
-  justify-content: space-between;
-  background: #f6f7f8;
+  justify-content: start;
+  background: rgba(1, 130, 172, 1);
   width: 350px;
   height: 100%;
+  padding:20px;
+  color: #fff;
   border-radius: 0.5rem;
 }
 
@@ -48,13 +51,19 @@
 }
 
 .feature {
-  font-size: 1.5rem;
-  padding: 30px 50px 30px 40px;
+	width: 100%;
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
   font-weight: 500;
+  min-height: 100px;
 }
 
 .featureDescription {
-  padding: 0 50px 25px 40px;
+ display: none;
+ font-size: 18px;
+ line-height: 22px;
+ transition: all ease 0.5s;
 }
 
 .featureImg {
@@ -62,6 +71,22 @@
   height: 100%;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: top;
+}
+
+.feature_button{
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 1rem;
+	width: 150px;
+	background: rgba(1, 130, 172, 1);
 }
 
 .shopBtn {
@@ -80,6 +105,10 @@
 }
 .shopBtn:hover {
   background: #039b03;
+}
+
+.active{
+	display: block;
 }
 
 @media (max-width: 1100px) {
